@@ -1,0 +1,123 @@
+<div class="container">
+  <form class="m-auto" [formGroup]="movieForm" (submit)="onSubmit()">
+    <div class="form-group row justify-content-center p-3">
+      <label for="name" class="col-1">Name:</label>
+      <div class="col-5">
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          aria-describedby="name"
+          placeholder="Enter name..."
+          formControlName="name"
+        />
+        <small id="emailHelp" class="form-text text-muted"
+          >We'll never share your email with anyone else.</small
+        >
+      </div>
+    </div>
+    <div class="form-group row justify-content-center p-3">
+      <label for="description" class="col-1">Description:</label>
+      <div class="col-5">
+        <textarea
+          name="descripton"
+          id="description"
+          class="form-control"
+          rows="5"
+          placeholder="Enter description..."
+          formControlName="description"
+        ></textarea>
+        <small id="emailHelp" class="form-text text-muted"
+          >We'll never share your email with anyone else.</small
+        >
+      </div>
+    </div>
+    <div class="form-group row justify-content-center p-3">
+      <label for="year" class="col-1">Year:</label>
+      <div class="col-5">
+        <input
+          type="text"
+          class="form-control"
+          id="year"
+          aria-describedby="year"
+          placeholder="Enter year"
+          formControlName="year"
+        />
+        <small id="emailHelp" class="form-text text-muted"
+          >We'll never share your email with anyone else.</small
+        >
+      </div>
+    </div>
+    <div class="form-group row justify-content-center p-3">
+      <label for="rating" class="col-1">Rating:</label>
+      <div class="col-5">
+        <input
+          type="text"
+          class="form-control"
+          id="rating"
+          aria-describedby="rating"
+          placeholder="Enter rating"
+          formControlName="rating"
+        />
+        <small id="emailHelp" class="form-text text-muted"
+          >We'll never share your email with anyone else.</small
+        >
+      </div>
+    </div>
+    <div class="form-group row justify-content-center p-3">
+      <label for="duration" class="col-1">Duration:</label>
+      <div class="col-5">
+        <input
+          type="text"
+          class="form-control"
+          id="duration"
+          aria-describedby="duration"
+          placeholder="Enter duration"
+          formControlName="duration"
+        />
+        <small id="emailHelp" class="form-text text-muted"
+          >We'll never share your email with anyone else.</small
+        >
+      </div>
+    </div>
+    <div class="form-group row justify-content-center p-3">
+      <label for="director" class="col-1">Director:</label>
+      <div class="col-5">
+        <input
+          type="text"
+          class="form-control"
+          id="director"
+          aria-describedby="director"
+          placeholder="Enter director"
+          formControlName="director"
+        />
+        <small id="emailHelp" class="form-text text-muted"
+          >We'll never share your email with anyone else.</small
+        >
+      </div>
+    </div>
+    <div class="form-group row justify-content-center p-3">
+      <label for="genre" class="col-1">Genre:</label>
+      <div class="col-3">
+        <select
+          name="genre"
+          id="genre"
+          class="form-control"
+          formControlName="genre"
+        >
+          <option value="drama">Drama</option>
+          <option value="action">Action</option>
+          <option value="sci-fi">Sci-fi</option>
+          <option value="comedy">Comedy</option>
+          <option value="horror">Horror</option>
+        </select>
+        <small id="emailHelp" class="form-text text-muted"
+          >We'll never share your email with anyone else.</small
+        >
+      </div>
+    </div>
+    <div class="form-group row justify-content-center p-3">
+      <button type="submit" class="btn btn-primary col-1">Submit</button>
+    </div>
+  </form>
+</div>

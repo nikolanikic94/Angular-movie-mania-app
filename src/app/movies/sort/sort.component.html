@@ -1,0 +1,23 @@
+<div class="row d-flex align-items-center">
+  <div class="col-2">
+    <label for="sort">Sort by:</label>
+  </div>
+  <div class="col-4">
+    <select
+      class="form-control col-4"
+      name="sort"
+      id="sort"
+      [(ngModel)]="sort"
+      (change)="sortCriteria()"
+    >
+      <option value="rating">Rating</option>
+      <option value="year">Year</option>
+    </select>
+  </div>
+  <div class="col-1 d-flex justify-content-start">
+    <button class="btn btn-primary" (click)="sortDirection('asc')">▲</button>
+  </div>
+  <div class="col-1">
+    <button class="btn btn-primary" (click)="sortDirection('desc')">▼</button>
+  </div>
+</div>

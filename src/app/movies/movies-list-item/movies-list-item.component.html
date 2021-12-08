@@ -1,0 +1,14 @@
+<div class="row bg-light m-3 p-3">
+  <a [routerLink]="['/movies', movie.id]" class="h4 text-decoration-none"
+    >{{ movie.$name }}
+    <span class="text-dark">({{ movie.$year }})</span>
+  </a>
+  <p>{{ movie.$description }}</p>
+  <div class="d-flex justify-content-between">
+    <div>
+      <img src="../../../assets/images/gold_star.png" alt="star" />
+      {{ movie.$rating }}
+    </div>
+    <div>{{ movie.$duration }} mins</div>
+  </div>
+</div>
